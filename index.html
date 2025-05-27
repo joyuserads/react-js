@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo JS</title>
-    <script src="app.js"></script>
 </head>
+
 <body>
     <h1>Aprendendo JS</h1>
 
-   <!-- Para ir a outra página vamos utilizar window / 
+    <!-- Para ir a outra página vamos utilizar window / 
         Para passar o caminho vamos utilizar href -->
     <button onclick="window.location.href='https://sujeitoProgramador.com'; ">Ir ao sujeitoProgramador</button>
 
-     <!-- Script de atualizaçao de pagina -->
+    <!-- Script de atualizaçao de pagina -->
     <button onclick="window.location.href= window.location.href ">Atualizar a Pagina</button>
+
+    <div id="area">
+        Bem vindo
+    </div>
+
+    <br /><br /> <!--Quebra de linha-->
+
+    <!--Criando um botão para substituir a entrada "Bem vindo" dentro do id"
+        logo após, adicionamos o bem vindo 
+    -->
+    <button
+        onclick="document.getElementById('area').innerHTML = 'Bem vindo' +' '+ prompt('Qual seu nome?');  ">Entrar</button>
+
+    <!------------------------------------------>
+    <div id="area">
+       Qual nome do botão?
+    </div>
+
+    <br /><br /> <!--Quebra de linha-->
+
+    <!-- Alterando o nome do botão
+    -->
+    <button onclick="this.innerHTML = prompt('Qual o nome do botão?'); ">Qual meu nome</button>
+
+
+
 </body>
+
 </html>
