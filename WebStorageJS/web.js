@@ -28,7 +28,10 @@ var nome = '';
 //fazendo uma comparação pra saber se tem um nome preenchido
 if(typeof localStorage.nome == 'undefined'){
     localStorage.nome = prompt("Digite seu nome?");
+
     nome = localStorage.nome;
     document.getElementById('nome').innerHTML = nome;
-
+    
 }
+
+// podemos usar sessionStorage, a diferente é que ele não salva os dados de pesquisa do navegador
